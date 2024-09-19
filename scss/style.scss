@@ -121,6 +121,15 @@
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+    transition: 1s;
+}
+
+.button__no:hover {
+    font-size: 24px;
+}
+
+.button__continue:hover {
+    font-size: 24px;
 }
 
 .button__continue {
@@ -136,6 +145,7 @@
     border-radius: 10px;
     box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
     background: linear-gradient(159.33deg, rgb(255, 229, 59) -27.058%,rgb(255, 37, 37) 111.801%);
+    transition: 1s;
 }
 
 // slider
@@ -252,6 +262,11 @@ text-transform: uppercase;
     border-radius: 10px;
     box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
     background: linear-gradient(159.33deg, rgb(255, 229, 59) -17.958%,rgb(255, 37, 37) 107.761%);
+    transition: 1s;
+}
+
+.slider__next:hover {
+    font-size: 24px;
 }
 
 // warning
@@ -319,12 +334,208 @@ section.warning {
     border-radius: 10px;
     box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
     background: linear-gradient(159.33deg, rgb(255, 229, 59) -17.958%,rgb(255, 37, 37) 107.761%);
+    transition: 1s;
+}
+
+.warning__ok:hover {
+    font-size: 24px;
 }
 
 .warning__btn {
     padding-bottom: 258px;
 }
 
+// ================
+
+@media (max-width: 900px) and (min-width: 319px) {
+
+    ._conteiner {
+        max-width: 308px;
+    }
+
+    .header {
+        background: url(../img/bg1mob.png) 0 0/100% 100% no-repeat;
+    }
+
+    .header__content {
+        width: 308px;
+        margin-top: 21px;
+        margin-bottom: 207px;
+    }
+
+    .header__top {
+        color: rgb(255, 255, 255);
+        font-family: Nirmala UI;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .header__title {
+        background: linear-gradient(178.43deg, rgb(235, 93, 56),rgb(255, 214, 0));
+        -webkit-background-clip:
+        text;
+        -webkit-text-fill-color:
+        transparent;
+        background-clip:
+        text;
+        text-fill-color:
+        transparent;
+        font-family: Nirmala UI;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .header__subtitle {
+        color: rgb(255, 242, 206);
+        font-family: Nirmala UI;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 20%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .header__buttons {
+        width: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button__continue {
+        margin-bottom: 10px;
+        width: 330px;
+    }
+
+    .button__no {
+        width: 330px;
+    }
 
 
+    .slider {
+        background: url(../img/bg2mob.png) 0 0/100% 100% no-repeat;
+    }
 
+    .slider__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider__title {
+        background: linear-gradient(178.43deg, rgb(235, 93, 56),rgb(255, 214, 0));
+        -webkit-background-clip:
+        text;
+        -webkit-text-fill-color:
+        transparent;
+        background-clip:
+        text;
+        text-fill-color:
+        transparent;
+        font-family: Nirmala UI;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 308px;
+        margin-top: 21px;
+    }
+
+    .card__img {
+        width: 226px;
+        height: 270px;
+        padding: 27px 27px 57px 27px;
+        margin-top: 13px;
+    }
+
+    .slider__arrow--left {
+        left: 185px;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .slider__arrow--right {
+        right: 26%;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .card__name {
+        font-size: 20px;
+    }
+
+    .slider__next {
+        font-size: 24px;
+        padding: 10px 86px;
+        margin-top: 20px;
+    }
+
+    section#warning {
+        background: url(../img/bg3mob.png) 0 0/100% 100% no-repeat;
+    }
+
+    .warning__title {
+        background: linear-gradient(178.43deg, rgb(235, 93, 56),rgb(255, 214, 0));
+        -webkit-background-clip:
+        text;
+        -webkit-text-fill-color:
+        transparent;
+        background-clip:
+        text;
+        text-fill-color:
+        transparent;
+        font-family: Nirmala UI;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 21px;
+        margin-bottom: 10px;
+    }
+
+    .warning__subtitle {
+        color: rgb(255, 255, 255);
+        font-family: Nirmala UI;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 309px;
+    }
+
+    .warning__ok {
+        color: rgb(255, 255, 255);
+        font-family: Nirmala UI;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 50px;
+    }
+
+    .warning__btn {
+        padding-bottom: 45px;
+    }
+}
