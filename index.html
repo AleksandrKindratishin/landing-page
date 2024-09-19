@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .content, .warning { display: none; } /* Скрываем все секции */
+        .active { display: block !important; } /* Показываем только активную секцию */
+    </style>
+</head>
+<body>
+    <!-- HEADER: первая секция контента -->
+    <header class="header content active" id="header">
+        <div class="header__conteiner _conteiner">
+            <div class="header__content">
+                <h2 class="header__top">Stop spending time on mediocre online stuff!</h2>
+                <h1 class="header__title">Explore our intriguing 3D game</h1>
+                <h2 class="header__subtitle">Instead and experience unparalleled pleasure like <br> you've never seen before.</h2>
+            </div>
+            <div class="header__buttons buttons">
+                <a href="#" data-target="slider" class="button__continue">Continue</a>
+                <a href="#" class="button__no">No, thanks</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SLIDER: вторая секция контента -->
+    <section class="slider content" id="slider">
+        <div class="slider__container _conteiner">
+            <h2 class="slider__title">Who Would You Choose as Your First Partner, if you play right now?</h2>
+            
+            <div class="slider__wrapper">
+                <!-- Левая стрелка -->
+                <div class="slider__arrow slider__arrow--left">
+                    <img src="img/left.svg" alt="Previous">
+                </div>
+                
+                <!-- Карточки -->
+                <div class="slider__cards cards">
+                    <div class="slider__item">
+                        <img src="img/card1.png" alt="" class="card__img">
+                        <p class="card__name">Step-Sister</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/card2.png" alt="" class="card__img">
+                        <p class="card__name">Your Neighbor</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/card3.png" alt="" class="card__img">
+                        <p class="card__name">Famous Celebrity</p>
+                    </div>
+                </div>
+                <!-- Правая стрелка -->
+                <div class="slider__arrow slider__arrow--right">
+                    <img src="img/right.svg" alt="Next">
+                </div>
+            </div>
+            <div class="slider__btn">
+                <a href="#" class="slider__next">next</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WARNING: третья секция контента -->
+    <section class="warning" id="warning">
+        <div class="warning__conteiner _conteiner">
+            <div class="warning__content">
+                <h2 class="warning__title">Warning</h2>
+                <p class="warning__subtitle">You must be at least 18 years old and comfortable with mature topics to play the game.</p>
+                <div class="warning__btn">
+                    <a href="#" class="warning__ok">Ok, Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/content.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

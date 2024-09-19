@@ -1,0 +1,445 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Nirmala UI";
+  src: url("../fonts/Nirmala ui.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.bigred {
+  font-size: 20px;
+  color: red;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+._conteiner {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background: url(../img/bg-1.jpeg) 0 0/100% 100% no-repeat;
+}
+
+.header__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__content {
+  margin-top: 191px;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  max-width: 779px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header__title {
+  background: linear-gradient(178.43deg, rgb(235, 93, 56), rgb(255, 214, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Nirmala UI;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.header__subtitle {
+  color: rgb(255, 242, 206);
+  font-family: Nirmala UI;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 20%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
+  width: 496px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 191px;
+}
+
+.button__no {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+          box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+}
+
+.button__continue {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+          box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(159.33deg, rgb(255, 229, 59) -27.058%, rgb(255, 37, 37) 111.801%);
+}
+
+.slider {
+  background: url(../img/bg2.jpeg) 0 0/100% 100% no-repeat;
+}
+
+.slider__title {
+  background: linear-gradient(178.43deg, rgb(235, 93, 56), rgb(255, 214, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Nirmala UI;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Обертка слайдера */
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрирование по горизонтали */
+  overflow: hidden;
+  position: relative;
+  height: 100vh; /* Установка высоты на 100% высоты экрана */
+}
+
+/* Карточки */
+.slider__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider__item {
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Центрирование карточек по горизонтали и вертикали */
+}
+
+.card__name {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -70px;
+  z-index: 10;
+}
+
+.card__img {
+  padding: 42px 71px 108px 71px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+}
+
+/* Стрелки */
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.slider__arrow--left {
+  left: 10px;
+}
+
+.slider__arrow--right {
+  right: 10%;
+}
+
+.slider__btn {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.slider__next {
+  margin-bottom: 70px;
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 214px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+          box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(159.33deg, rgb(255, 229, 59) -17.958%, rgb(255, 37, 37) 107.761%);
+}
+
+section.warning {
+  background: url(../img/bg3.png) 0 0/100% 100% no-repeat;
+}
+
+.warning__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warning__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 785px;
+}
+
+.warning__title {
+  margin-top: 257px;
+  background: linear-gradient(178.43deg, rgb(235, 93, 56), rgb(255, 214, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: Nirmala UI;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.warning__subtitle {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.warning__ok {
+  color: rgb(255, 255, 255);
+  font-family: Nirmala UI;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 120px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+          box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(159.33deg, rgb(255, 229, 59) -17.958%, rgb(255, 37, 37) 107.761%);
+}
+
+.warning__btn {
+  padding-bottom: 258px;
+}
